@@ -1,0 +1,123 @@
+/* 🌍 PAGE */
+.wishlist-container {
+  padding: 30px;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* 🔙 BACK BUTTON */
+.back-btn {
+  background: var(--card);
+  color: var(--text);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #334155;
+}
+
+/* ❤️ TITLE */
+.wishlist-container h2 {
+  margin-bottom: 20px;
+}
+
+/* 📱 GRID */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+/* 📦 CARD */
+.wishlist-card {
+  background: var(--card);
+  padding: 15px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  position: relative;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-8px);
+}
+
+/* 🖼 IMAGE */
+.wishlist-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* 📖 TITLE */
+.wishlist-card h3 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* ✍ AUTHOR */
+.wishlist-card p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* 💰 PRICE */
+.wishlist-card .price {
+  color: #22c55e;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* ❌ REMOVE BUTTON (TOP RIGHT LIKE APPS) */
+.remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* 🛒 MOVE TO CART BUTTON */
+.move-btn {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(45deg, #22c55e, #16a34a);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.move-btn:hover {
+  transform: scale(1.05);
+}
+
+/* 📭 EMPTY */
+.wishlist-container p {
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 20px;
+}
+.wishlist-card button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

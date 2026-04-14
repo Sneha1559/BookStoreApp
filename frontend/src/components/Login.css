@@ -1,0 +1,88 @@
+/* 🌍 BACKGROUND */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  transition: 0.3s;
+}
+
+/* 💎 GLASS CARD */
+.login-card {
+  background: rgba(43, 7, 43, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 16px;
+  width: 350px;
+  text-align: center;
+  color: var(--text);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+/* 🌙 DARK MODE CARD */
+.dark .login-card {
+  background: rgba(35, 50, 84, 0.7);
+}
+
+/* 📚 LOGO */
+.logo {
+  color: #22c55e;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+/* ✍ SUBTITLE */
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #94a3b8;
+}
+
+/* ✏ INPUT GROUP */
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  background: var(--card);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.login-card input:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
+}
+
+/* 🔘 BUTTON */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #22c55e, #16a34a);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.login-card button:hover {
+  transform: scale(1.05);
+}
+
+/* 🔗 REGISTER LINK */
+.login-card span {
+  color: #22c55e;
+  font-weight: 500;
+}
+
+.login-card span:hover {
+  text-decoration: underline;
+}

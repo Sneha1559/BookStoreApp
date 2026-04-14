@@ -1,0 +1,156 @@
+/* 🌍 CART PAGE */
+.cart-container {
+  padding: 30px;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* 🔙 BACK BUTTON */
+.back-btn {
+  background: var(--card);
+  color: var(--text);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #334155;
+}
+
+/* 🧾 TITLE */
+.cart-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* 📦 CART ITEM CARD */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--card);
+  margin-bottom: 18px;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.cart-item:hover {
+  transform: translateY(-4px);
+}
+
+/* 🖼 IMAGE */
+.cart-item img {
+  width: 90px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 📄 INFO */
+.info {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.info p {
+  margin: 5px 0;
+  color: #94a3b8;
+}
+
+/* 🔢 QUANTITY CONTROLS */
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.qty button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #e2e8f0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.qty button:hover {
+  background: #cbd5e1;
+}
+
+/* ❌ REMOVE BUTTON */
+.remove {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove:hover {
+  background: #dc2626;
+}
+
+/* 💰 SUMMARY BOX */
+.summary {
+  margin-top: 30px;
+  padding: 25px;
+  background: var(--card);
+  border-radius: 16px;
+  text-align: right;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* TOTAL TEXT */
+.summary h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* 💳 BUY BUTTON */
+.summary button {
+  background: linear-gradient(45deg, #22c55e, #16a34a);
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.summary button:hover {
+  transform: scale(1.05);
+}
+
+/* 📭 EMPTY CART */
+.cart-container p {
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 20px;
+}
+
+/* 🌙 DARK MODE IMPROVEMENTS */
+.dark .qty button {
+  background: #1e293b;
+  color: white;
+}
+
+.dark .qty button:hover {
+  background: #334155;
+}

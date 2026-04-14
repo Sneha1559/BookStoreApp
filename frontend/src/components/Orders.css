@@ -1,0 +1,95 @@
+/* 🌍 PAGE */
+.orders-container {
+  padding: 30px;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* 🔙 BACK BUTTON */
+.back-btn {
+  background: var(--card);
+  color: var(--text);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #334155;
+}
+
+/* 🧾 TITLE */
+.orders-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* 📦 ORDER CARD */
+.order-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🧾 ORDER HEADER */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.order-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.order-card p {
+  margin: 4px 0;
+  color: #94a3b8;
+}
+
+/* 💰 TOTAL */
+.total {
+  font-weight: bold;
+  color: #22c55e;
+}
+
+/* 📚 ITEMS LIST */
+.order-items {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #cbd5e1;
+}
+
+/* EACH ITEM */
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+/* 📭 EMPTY STATE */
+.orders-container p {
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 20px;
+}
+
+/* 🌙 DARK MODE FIX */
+.dark .order-items {
+  border-top: 1px solid #334155;
+}

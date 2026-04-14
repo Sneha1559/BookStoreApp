@@ -1,0 +1,70 @@
+/* 🌍 CONTAINER */
+.sell-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  transition: 0.3s;
+}
+
+/* 💎 GLASS CARD */
+.sell-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 35px;
+  border-radius: 18px;
+  width: 360px;
+  text-align: center;
+  color: var(--text);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* 🌙 DARK MODE */
+.dark .sell-card {
+  background: rgba(15, 23, 42, 0.7);
+}
+
+/* 📦 TITLE */
+.sell-card h2 {
+  margin-bottom: 20px;
+  color: #22c55e;
+}
+
+/* ✏ INPUT */
+.sell-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  background: var(--card);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.sell-card input:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
+}
+
+/* 🔘 BUTTON */
+.sell-card button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #22c55e, #16a34a);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+/* HOVER */
+.sell-card button:hover {
+  transform: scale(1.05);
+}

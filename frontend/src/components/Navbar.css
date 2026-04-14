@@ -1,0 +1,102 @@
+/* 🌍 NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 28px;
+  background: var(--navbar);
+  color: var(--text);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* 📚 LOGO */
+.logo {
+  color: #22c55e;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+}
+
+/* 🔘 BUTTON GROUP */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 🔘 BASE BUTTON */
+.nav-buttons button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  background: var(--card);
+  color: var(--text);
+}
+
+/* 🔘 HOVER */
+.nav-buttons button:hover {
+  transform: translateY(-2px);
+  background: #e2e8f0;
+}
+
+/* 🌙 DARK MODE BUTTON */
+.icon-btn {
+  font-size: 18px;
+  padding: 8px 10px;
+}
+
+/* 🛒 CART */
+.nav-buttons button:nth-child(3) {
+  background: #22c55e;
+  color: white;
+}
+
+.nav-buttons button:nth-child(3):hover {
+  background: #16a34a;
+}
+
+/* ❤️ WISHLIST */
+.nav-buttons button:nth-child(4) {
+  background: #f1f5f9;
+}
+
+/* 📦 SELL */
+.nav-buttons button:nth-child(2) {
+  background: #e0f2fe;
+}
+
+/* 🧾 ORDERS */
+.nav-buttons button:nth-child(5) {
+  background: #fef9c3;
+}
+
+/* 🔴 LOGOUT */
+.logout {
+  background: #ef4444 !important;
+  color: white !important;
+}
+
+.logout:hover {
+  background: #dc2626 !important;
+}
+
+/* 🌙 DARK MODE FIX */
+.dark .nav-buttons button {
+  background: #1e293b;
+  color: white;
+}
+
+.dark .nav-buttons button:hover {
+  background: #334155;
+}

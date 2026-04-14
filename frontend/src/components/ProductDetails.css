@@ -1,0 +1,144 @@
+/* 🌍 PAGE */
+.product-container {
+  padding: 30px;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* 🔙 BACK BUTTON */
+.back-btn {
+  background: var(--card);
+  color: var(--text);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #334155;
+}
+
+/* 📦 MAIN CARD */
+.product-card {
+  display: flex;
+  gap: 40px;
+  background: var(--card);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  align-items: flex-start;
+}
+
+/* 🖼 IMAGE */
+.product-card img {
+  width: 260px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* 📄 DETAILS */
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 📖 TITLE */
+.product-details h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+/* ✍ AUTHOR */
+.product-details p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* ⭐ RATING */
+.rating {
+  color: #facc15;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* 💰 PRICE */
+.price {
+  font-size: 26px;
+  color: #22c55e;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* 📝 DESCRIPTION */
+.desc {
+  margin-top: 10px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* 📌 EXTRA INFO */
+.extra-info {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* 🛒 BUTTON GROUP */
+.actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* BUY BUTTON */
+.buy-btn {
+  background: linear-gradient(45deg, #22c55e, #16a34a);
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ADD TO CART (SECONDARY) */
+.cart-btn {
+  background: #e2e8f0;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dark .cart-btn {
+  background: #1e293b;
+  color: white;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-card img {
+    width: 200px;
+    height: 280px;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+}

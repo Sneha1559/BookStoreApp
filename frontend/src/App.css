@@ -1,0 +1,22 @@
+/* 🌞 LIGHT MODE */
+.light {
+  --bg: #f1f5f9;
+  --text: #0f172a;
+  --card: #ffffff;
+}
+
+/* 🌙 DARK MODE */
+.dark {
+  --bg: #0f172a;
+  --text: #f8fafc;
+  --card: #1e293b;
+}
+
+/* APPLY EVERYWHERE */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
